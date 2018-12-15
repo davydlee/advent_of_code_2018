@@ -11,8 +11,8 @@ with open('input.txt', 'r') as f:
             map[letter] = map.get(letter, 0) + 1
             #print(letter)
         if 2 in map.values():
-            twice = twice + 1
+            twice += 1
         if 3 in map.values():
-            thrice = thrice + 1
+            thrice += 1
     checksum = twice * thrice
     print(checksum)
