@@ -5,5 +5,5 @@ with open('input.txt', 'r') as f:
     sum = 0
     for line in read_data:
         #print(line)
-        sum = sum + int(line)
+        sum += int(line)
     print("The sum is " + str(sum))
