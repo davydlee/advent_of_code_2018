@@ -9,11 +9,11 @@ with open('input.txt', 'r') as f:
     while setHasValue is False:
         for line in read_data:
             intVal = int(line)
-            sum = sum + intVal
+            sum += intVal
             if sum in valSet:
                 setHasValue = True
                 print("Repeat value is " + str(sum))
                 break
             valSet.add(sum)
-        loopsThroughInput = loopsThroughInput + 1
-    print(loopsThroughInput)
+        loopsThroughInput += 1
+    print("Number of loops through the input list: " + str(loopsThroughInput))
